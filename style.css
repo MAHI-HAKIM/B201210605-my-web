@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
+body {
+  margin: 0;
+  line-height: 1.5;
+  background-color: #f3f2f1;
+}
+body,
+input,
+textarea,
+button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 60px;
+  padding: 0 15px;
+}
+.section-title h1 {
+  display: inline-block;
+  font-size: 40px;
+  color: #000000;
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+}
+.section-title h1:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 80px;
+  height: 3px;
+  background-color: #ff9800;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.header .brand-name {
+  /* background-color: red; */
+  padding: 0 15px;
+}
+
+.header .brand-name a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #ff9800;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.header .nav {
+  /* background-color: gray; */
+  padding: 0 15px;
+}
+
+.header .nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header .nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.header .nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 25px 0;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.header .nav ul li a:hover {
+  color: #f0fe26;
+}
+
+/* home section */
+.home-section {
+  min-height: 100vh;
+  background-image: url("../pics/home-page.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  padding: 0 15px;
+}
+.home-section:before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.home-section .row {
+  min-height: 100vh;
+}
+.home-section .home-content {
+  /*background-color: red;*/
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+}
+.home-section .home-content h4 {
+  font-size: 20px;
+  color: #7b7b7b;
+  margin: 0;
+}
+.home-section .home-content h1 {
+  font-size: 60px;
+  margin: 0;
+  color: #edffb2;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 10px;
+}
