@@ -1,155 +1,206 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
-body {
-  margin: 0;
-  line-height: 1.5;
-  background-color: #f3f2f1;
-}
-body,
-input,
-textarea,
-button {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Niconne&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
   margin: 0;
+  padding: 0;
 }
 
-.container {
-  max-width: 1170px;
-  margin: auto;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-.align-items-center {
-  align-items: center;
-}
-.justify-content-between {
-  justify-content: space-between;
-}
-
-.section-title {
-  flex: 0 0 100%;
+html,
+body {
   max-width: 100%;
-  margin-bottom: 60px;
-  padding: 0 15px;
+  overflow-x: hidden;
 }
-.section-title h1 {
-  display: inline-block;
-  font-size: 40px;
-  color: #000000;
-  font-weight: 700;
-  margin: 0;
+
+/*---------------------------------------------------*/
+/* RESPONSIVE NAVIGATOR BAR */
+/*---------------------------------------------------*/
+
+.navibar {
+  top: 0;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(9, 214, 44);
+  z-index: 9999;
+}
+
+.brand-title p {
   position: relative;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-left: 100px;
+  font-size: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 950;
+  letter-spacing: 2px;
+  transition: all 0.5s ease;
 }
-.section-title h1:before {
+
+.brand-title p:hover {
+  font-size: 45px;
+  color: #fffd93;
+  text-decoration: none;
+}
+
+.brand-title p:before {
   content: "";
   box-sizing: border-box;
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: -1px;
   width: 80px;
   height: 3px;
   background-color: #ff9800;
 }
 
-.header {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 99;
+.navibar-links {
+  margin-right: 4%;
 }
-.header .brand-name {
-  /* background-color: red; */
-  padding: 0 15px;
-}
-
-.header .brand-name a {
-  text-decoration: none;
-  font-size: 30px;
-  color: #ff9800;
-  text-transform: uppercase;
-  font-weight: 900;
-  letter-spacing: 2px;
-}
-
-.header .nav {
-  /* background-color: gray; */
-  padding: 0 15px;
-}
-
-.header .nav ul {
-  list-style: none;
+.navibar-links ul {
   margin: 0;
   padding: 0;
+  display: flex;
 }
-
-.header .nav ul li {
-  display: inline-block;
-  margin-left: 30px;
+.navibar-links ul li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 100;
 }
-
-.header .nav ul li a {
+.navibar-links li a {
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  color: #ffffff;
-  padding: 25px 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffc671;
+  opacity: 0.95;
+  padding: 1.6rem;
   display: block;
-  transition: all 0.5s ease;
 }
 
-.header .nav ul li a:hover {
-  color: #f0fe26;
-}
-
-/* home section */
-.home-section {
-  min-height: 100vh;
-  background-image: url("../pics/home-page.jpg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  z-index: 1;
-  padding: 0 15px;
-}
-.home-section:before {
+.navibar-links li a::after {
+  position: fixed;
+  display: inline-block;
   content: "";
   position: absolute;
-  box-sizing: border-box;
+  width: 0;
+  height: 4px;
+  background: #f7a831;
+  bottom: -1px;
   left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #000000;
-  opacity: 0.7;
+  border-radius: 5px;
   z-index: -1;
+  transition: background linear 0.2s;
 }
 
-.home-section .row {
-  min-height: 100vh;
+.navibar-links li a:hover::after {
+  width: 100%;
 }
-.home-section .home-content {
-  /*background-color: red;*/
-  flex: 0 0 100%;
-  max-width: 100%;
-  text-align: center;
+
+.navibar-links li:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.1s, transform 0.3s;
+  transform: scale(0.85);
 }
-.home-section .home-content h4 {
-  font-size: 20px;
-  color: #7b7b7b;
-  margin: 0;
+.navibar-links li:active {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s, transform 0.5s;
+  transform: scale(1.02);
 }
-.home-section .home-content h1 {
-  font-size: 60px;
-  margin: 0;
-  color: #edffb2;
-  text-transform: uppercase;
-  font-weight: 900;
-  letter-spacing: 10px;
+.navibar:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.1s, transform 0.3s;
+  transform: scale(1.02);
+}
+.nav-toggle {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  width: 40px;
+  height: 34px;
+  border: 2px solid rgb(55, 135, 84);
+  margin-top: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5 ease;
+  display: none;
+}
+
+.nav-toggle .line {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  height: 1px;
+  width: 80%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: 0.5sec;
+}
+
+.nav-toggle :hover {
+  background-color: rgb(223, 200, 19);
+}
+
+/*HEADER*/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(../pics/main_page.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+/*RESPONSIVE FEATURES*/
+
+@media (max-width: 860px) {
+  .nav-toggle {
+    display: flex;
+    transition: all 0.5s ease;
+  }
+  .brand-title p {
+    font-size: 40px;
+  }
+  .navibar-links {
+    display: none;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  .navibar {
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.5s ease;
+  }
+  .navibar-links ul {
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  .navibar-links li {
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+  .navibar-links li a {
+    padding: 0.5rem 1rem;
+    transition: all 0.5s ease;
+  }
+  .navibar-links.active {
+    display: flex;
+    transition: all 0.5s ease;
+  }
 }
