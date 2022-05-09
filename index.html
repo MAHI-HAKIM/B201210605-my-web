@@ -1,48 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- HEAD STARTS -->
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel=stylesheet type="text/css" href="style.css">
-    <script src=script.js defer> </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <link rel="shortcut icon" href="img/favicon.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <title>B201210605</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
+  <!-- HEAD ENDS -->
 
   <body>
-    <body>
-      <!-- NAVIGATOR-BARS START -->
-      <nav class="navibar">
-        <a href = "index.html" class="brand-title">
-          <p>Ethio-Trek.</p>
-        </a>
-        <a href="#" class="nav-toggle">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </a>
-       
-        <div class="navibar-links">
-          <ul class="navbar-nav mr-auto">
-            <li><a href="index.html" class = "link">Home</a></li>
-            <li><a href="#" class = "link">My cv</a></li>
-            <li><a href="#" class = "link">Ethiopia</a></li>
-            <li><a href="#" class = "link">Tourism</a></li>       
-            <li><a href="#" class = "link">Contact</a></li>
-          </ul>
+    <!-- NAVIGATOR-BARS START -->
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">Ethio<span>Trek.</span></a>
         </div>
-      </nav>
-      <!-- NAVIGATORS-BARS END -->
+        <ul class="menu">
+          <li><a href="index.html" class="menu-btn">Home</a></li>
+          <li><a href="#" class="menu-btn">My Cv</a></li>
+          <li><a href="#" class="menu-btn">Ethiopia</a></li>
+          <li><a href="#" class="menu-btn">Tourisms</a></li>
+          <li><a href="#" class="menu-btn">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVIGATORS-BARS END -->
 
-     <!-- HEADER-START -->
-      <header></header>
-      <!-- HEADER-ENDS -->
+    <!-- HEADER-START -->
+    <header class="home" id="home">
+      <div class="max-width">
+        <div class="home-content">
+          <div class="text-1">Hello, my name is</div>
+          <div class="text-2">Mahi Abdulhakim</div>
+          <div class="text-3">Welcome to <span class="typing"></span></div>
+          <a href="#" class="btn btn-primary btn-lg" href="#">Log In</a>
+        </div>
+      </div>
+      <!-- HOME SECTION ENDS -->
 
-    </body>
+      <!-- SCROLL-DOWN-BUTTON -->
+      <a href="#about" class="scroll-down">
+        <img src="images/arrow-down.svg" alt="scroll Down" />
+      </a>
+    </header>
+    <!-- HEADER-ENDS -->
+
+    <!-- ABOUT SECTION STARS -->
+    <section class="about" id="about">
+      <div class="max-width">
+        <h2 class="title">About me</h2>
+        <div class="about-content">
+          <div class="column left">
+            <img src="images/you.jpg" alt="" />
+          </div>
+          <div class="column right">
+            <div class="text">
+              I'm Mahi Abdulhakim and I like <span class="typing-2"></span>
+            </div>
+            <p>
+              You have finally came to read this.Hi😊 my name Mahi and I am from
+              Ethiopia. you might be wondering how old i am, I am old enough to
+              develop such a beautiful Website. I would like to take this chance
+              to say that Programming is so fun and Enjoyable
+              <br />
+              If i explain my hobbies shortly i like to play video games🎮 very
+              much and i also like to take pictures and edit them. I would like
+              to be photographer📸 one day. i also like to play Football very
+              much⚽.Phew..🤧 football has caused me lot of injuries in my life
+              times. If you want to Know more about me more click the button
+              bellow to contact me
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT SECTION ENDS -->
+
+    <!-- FOOTER SECTION STARTS -->
+    <footer>
+      <span
+        >Designed by <a href="#">Mahi Abdulhakim</a> |
+        <span class="far fa-copyright"></span> 2020 All rights reserved.</span
+      >
+    </footer>
+    <!-- FOOTER SECTION ENDS -->
+
+    <script src="script.js"></script>
+  </body>
 </html>
