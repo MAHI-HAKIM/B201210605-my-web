@@ -226,7 +226,11 @@ section .title::after {
   border: 3px solid rgb(27, 203, 4);
   transform: translateX(150%);
 }
-
+.about .about-content .right a:hover {
+  background-color: transparent;
+  color: rgb(0, 77, 4);
+  transition: all 0.5s ease;
+}
 /* -----------------------------------*/
 /* FOOTER SECTION STYLING */
 /* -----------------------------------*/
