@@ -28,7 +28,7 @@ $(document).ready(function () {
   });
 
   var typed = new Typed(".typing-2", {
-    strings: ["Code", "Photography", "Gaming", "Designing", "Football"],
+    strings: ["Traveling", "Photography", "Gaming", "Designing", "Football"],
     typeSpeed: 90,
     backSpeed: 60,
     loop: true,

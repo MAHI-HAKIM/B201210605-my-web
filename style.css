@@ -12,7 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+/* -----------------------------------*/
 /* all similar content styling codes */
+/* -----------------------------------*/
+
 section {
   padding: 100px 0;
 }
@@ -33,7 +36,7 @@ footer {
 }
 
 /*---------------------------------------------------*/
-/* RESPONSIVE NAVIGATOR BAR */
+/* NAVIGATOR BAR */
 /*---------------------------------------------------*/
 .navbar {
   position: fixed;
@@ -93,8 +96,10 @@ footer {
   cursor: pointer;
   display: none;
 }
-
+/* -----------------------------------*/
 /*HEADER*/
+/* -----------------------------------*/
+
 .home {
   display: flex;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -135,12 +140,10 @@ footer {
   padding: 10px 30px;
   border-radius: 25px;
   font-size: 23px;
-  background-color: rgb(0, 142, 116);
-  color: rgb(240, 255, 252);
 }
 
 .home .home-content a:hover {
-  color: rgb(168, 171, 255);
+  color: rgb(242, 255, 62);
   background: transparent;
 }
 
@@ -154,7 +157,9 @@ header .scroll-down {
   animation: scrollDown 2s ease infinite;
 }
 
+/* -----------------------------------*/
 /* ABOUT SECTION*/
+/* -----------------------------------*/
 
 section .title {
   position: relative;
@@ -209,8 +214,23 @@ section .title::after {
 .about .about-content .right p {
   text-align: justify;
 }
+.about .about-content .right a {
+  display: inline-block;
+  background: rgb(0, 77, 4);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 3px solid rgb(27, 203, 4);
+  transform: translateX(150%);
+}
 
+/* -----------------------------------*/
 /* FOOTER SECTION STYLING */
+/* -----------------------------------*/
+
 footer {
   background: rgb(1, 48, 4);
   height: 80px;
@@ -228,7 +248,10 @@ footer span a:hover {
   text-decoration: none;
 }
 
+/* -----------------------------------*/
 /*SCROLL DOWN BUTTON*/
+/* -----------------------------------*/
+
 @keyframes scrollDown {
   0%,
   20%,
@@ -245,7 +268,9 @@ footer span a:hover {
   }
 }
 
+/* -----------------------------------*/
 /*RESPONSIVE FEATURES*/
+/* -----------------------------------*/
 
 @media (max-width: 1104px) {
   .about .about-content .left img {
