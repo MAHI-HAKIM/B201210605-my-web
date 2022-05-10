@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="../script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="../Styles/footer.css" />
+    <link rel="stylesheet" type="text/css" href="intrest.css" />
+    <title>My-Intrest</title>
+  </head>
+  <body>
+    <!-- NAVIGATOR-BAR STARTS -->
+
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="/"><span>🏚</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="/" class="menu-btn">Home</a></li>
+          <li><a href="#" class="menu-btn">My Cv</a></li>
+          <li><a href="#" class="menu-btn">Ethiopia</a></li>
+          <li>
+            <a href="#" class="menu-btn">Tourisms</a>
+          </li>
+          <li>
+            <a href="#" class="menu-btn">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- NAVIGATOR-BAR ENDS -->
+
+    <!-- HEADER STARTS -->
+
+    <header class="home">
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            style="background-image: url('img/slide-1.jpg')"
+          >
+            <div class="container">
+              <h2>This is Mahi</h2>
+              <p>a Web Developer</p>
+              <p>
+                Ever since my chilhood i liked technologies.<br />I was always
+                passionated to be a developer. Specially graphic designer
+              </p>
+              <a href="#about" class="btn btn-success btn-lg" href="#">More</a>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url('img/slide-2.jpg')"
+          >
+            <div class="container">
+              <h2>Gaming Passion</h2>
+              <p>
+                Gaming is one of my favourite activities in my leisure time<br />
+                Belive it or not i have played too many games that even i am
+                always good in the new games i play without any experience.
+              </p>
+              <a href="#gamePassion" class="btn btn-success btn-lg" href="#"
+                >More</a
+              >
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url('img/slide-3.jpg')"
+          >
+            <div class="container">
+              <h2>Travel</h2>
+              <p>
+                Another passsioin that i have is to travel lots of places as
+                much as i can.I have a bucket list of the places i want to
+                travel and i will dedicate all my works i do to travel those
+                places and explore new culture
+              </p>
+              <a href="#travel" class="btn btn-success btn-lg">More</a>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <!-- HEADER ENDS -->
+
+    <!-- MORE ABOUT ME -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-img">
+            <div class="img-box">
+              <div class="shape-02"></div>
+              <img src="img/ME.jpg" alt="about me" />
+            </div>
+          </div>
+          <div class="about-content">
+            <div class="row">
+              <div class="section-title">
+                <h1>About Me</h1>
+              </div>
+            </div>
+            <p>
+              My Full Name is Mahi Abdulhakim Mohammed Abdullahi Ibrahim Mahi.
+              If you are wondering.I was born in Ethiopia and Grew up in a
+              beautifull City called<em
+                ><a href="#" class="home-city">Harar</a></em
+              >.Ever since my chilhood i always liked technologies,video games
+              and i always used to wonder how is it even possible to controll a
+              game character with some random controller. i always wanted to
+              know how these games or some programs are made.Destiny has led me
+              to know more about technologies. I more intrested on graphic
+              designing such as games,Websites,Editing Videos,Editing Photos and
+              so on... if you want to ask other information click the contact me
+              button to reach me.
+            </p>
+            <a href="#about" class="btn btn-warning btn-lg">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gaming Passion STARTS -->
+    <section class="content-section" id="gamePassion">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h1>SOME OF MY FAVOURITE GAMES</h1>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Item Start -->
+          <div class="content-item">
+            <div class="content-item-inner">
+              <img src="img/GTAV.jpg" alt="game" />
+              <div class="overlay">
+                <h4>Grand Theft Auto V</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+          <!-- item Start -->
+          <div class="content-item">
+            <div class="content-item-inner">
+              <img src="img/NFS.jpg" alt="game" />
+              <div class="overlay">
+                <h4>NEED FOR SPEED</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+          <!-- Item Start -->
+          <div class="content-item">
+            <div class="content-item-inner">
+              <img src="img/GODOFWAR.jpg" alt="game" />
+              <div class="overlay">
+                <h4>GOD OF WAR</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+          <!-- Item Start -->
+          <div class="content-item">
+            <div class="content-item-inner">
+              <img src="img/PUBG.jpg" alt="game" />
+              <div class="overlay">
+                <h4>PUBG</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+          <!-- Item Start -->
+          <div class="content-item">
+            <div class="content-item-inner">
+              <img src="img/UNCHARTED.jpg" alt="game" />
+              <div class="overlay">
+                <h4>UNCHARTED</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+          <!-- Item Start -->
+          <div class="content-item">
+            <div class="content-item-inner">
+              <img src="img/REDDEAD.jpg" alt="game" />
+              <div class="overlay">
+                <h4>READ DEAD REDEMPTION</h4>
+              </div>
+            </div>
+          </div>
+          <!--Item End -->
+        </div>
+      </div>
+    </section>
+    <!-- Gaming Passion Ends -->
+
+    <!-- TRAVEL SECTION START -->
+    <section class="content-section" id="travel">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h1>LIST TO TRAVEL ON MY BUCKET</h1>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Item Start -->
+          <div class="content-item">
+            <div class="content-item-inner">
+              <img src="img/MECCA.jpg" alt="travel" />
+              <div class="overlay">
+                <h4>MECCA</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+          <!-- item Start -->
+          <div class="content-item">
+            <div class="content-item-inner">
+              <img src="img/ISTANBUL.jpg" alt="travel" />
+              <div class="overlay">
+                <h4>ISTANBUL</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+          <!-- Item Start -->
+          <div class="content-item">
+            <div class="content-item-inner">
+              <img src="img/NEWYORK.jpg" alt="travel" />
+              <div class="overlay">
+                <h4>NEW YORK</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+          <!-- Item Start -->
+          <div class="content-item">
+            <div class="content-item-inner">
+              <img src="img/JAPAN.jpg" alt="travel" />
+              <div class="overlay">
+                <h4>JAPAN</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+          <!-- Item Start -->
+          <div class="content-item">
+            <div class="content-item-inner">
+              <img src="img/SWITZERLAND.jpg" alt="travel" />
+              <div class="overlay">
+                <h4>SWITZERLAND</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+          <!-- Item Start -->
+          <div class="content-item">
+            <div class="content-item-inner">
+              <img src="img/THAILAND.jpg" alt="travel" />
+              <div class="overlay">
+                <h4>THAILAND</h4>
+              </div>
+            </div>
+          </div>
+          <!--Item End -->
+        </div>
+      </div>
+    </section>
+    <!-- TRAVEL SECTION ENDS -->
+    <!-- FOOTER SECTION STARTS -->
+    <footer>
+      <span
+        >Designed by <a href="#">Mahi Abdulhakim</a> |
+        <span class="far fa-copyright"></span> 2022 All rights reserved.</span
+      >
+    </footer>
+    <!-- FOOTER SECTION ENDS -->
+  </body>
+</html>
