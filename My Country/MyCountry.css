@@ -1,0 +1,323 @@
+/* FOOTER SECTION STYLING */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+.intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/mesobs.JPG);
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+  background-attachment: fixed;
+}
+
+header {
+  position: absolute;
+}
+
+.intro .welcome h1 {
+  color: antiquewhite;
+  transform: translate(0%, -10%);
+  font-size: 500%;
+  font-weight: 700;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
+.intro .welcome {
+  margin: 15% auto auto 15%;
+  /* position: absolute; */
+}
+
+.flag img {
+  width: 80%;
+  height: 50%;
+  margin-top: 15px;
+}
+.second {
+  margin-top: 12%;
+}
+.second .row {
+  width: 100%;
+  padding: 0 10%;
+}
+.textimg {
+  width: 80%;
+}
+
+.vl {
+  border-left: 4px solid gray;
+  height: 100;
+  position: absolute;
+  left: 5%;
+  top: 0;
+}
+
+.description p,
+.extra-content p {
+  font-weight: 500;
+  font-size: larger;
+}
+.description h2,
+.extra-content h2 {
+  color: #fd7474;
+}
+
+.slider .heading,
+.extra .heading,
+.section-more .heading,
+.famous .heading,
+.events .heading {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Lato";
+  text-transform: uppercase;
+}
+
+.slider h1:after,
+.extra h1:after,
+.section-more h1:after,
+.famous h1:after,
+.events h1:after {
+  display: block;
+  height: 2px;
+  background-color: #fd7474;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 65px;
+}
+
+.carousel-slide {
+  width: 80%;
+  margin-left: 10%;
+  height: 50%;
+}
+
+.extra-content {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.extra-content .calendar,
+.extra-content .adwa {
+  padding: 0 6%;
+}
+
+.carousel-slide h1 {
+  color: lightseagreen;
+}
+.calendar img {
+  padding-top: 0;
+  margin-bottom: 15px;
+  width: 45%;
+  height: 45%;
+}
+.adwa img {
+  margin-left: -5px;
+  padding-top: 0;
+  width: 40%;
+  height: 40%;
+}
+
+.section-more {
+  padding: 0;
+}
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.meal-photo img {
+  opacity: 0.75;
+  width: 100%;
+  height: auto;
+  transform: scale(1.03);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+  transform: scale(1.15);
+  opacity: 1;
+}
+
+.resume .center {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  background: rgb(216, 214, 214);
+  border-radius: 10px;
+  height: 92%;
+  font-family: montserrat;
+  font-weight: 500;
+}
+/********************************READ MORE*****************************/
+.read-more {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.6)),
+    url(../img/bg_resume.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+}
+
+.read-more h1 {
+  margin: 25px;
+  font-weight: 700;
+  color: #68b2a6;
+}
+.read-more .intro {
+  margin-bottom: 25px;
+}
+.read-more p {
+  text-indent: 25px;
+}
+
+.famous {
+  margin-top: 25%;
+}
+.famous h1 {
+  text-justify: inter-word;
+}
+
+.airlines,
+.ceremony,
+.athletics {
+  border: solid gray 1px;
+}
+
+.album img {
+  margin-left: -15px;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
+.featurette {
+  margin-bottom: 20px;
+  width: 90%;
+  transform: translateX(5%);
+}
+
+.events {
+  background-color: #d8d8d8;
+}
+
+.events h2 {
+  color: #fc6565;
+  font-size: 250%;
+}
+
+/************************ RESPONSIVENESS*******************************/
+@media (max-width: 1200px) {
+  .intro .welcome h1 {
+    transform: translate(-5%, -10%);
+    font-size: 400%;
+  }
+}
+
+@media (max-width: 992px) {
+  .intro .welcome h1 {
+    transform: translate(0%, -10%);
+    font-size: 300%;
+  }
+  .vl {
+    border-left: 0px solid gray;
+  }
+  .album img {
+    width: 750px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro .welcome h1 {
+    transform: translate(0%, -10%);
+    font-size: 250%;
+  }
+  .slider h1,
+  .extra h1,
+  .section-more h1,
+  .famous h1,
+  .events h1 {
+    font-size: 150%;
+  }
+  .album {
+    margin-left: 12%;
+  }
+  .album img {
+    width: 600px;
+    height: auto;
+  }
+  .events h2 {
+    font-size: 150%;
+  }
+}
+
+@media (max-width: 700px) {
+  .carousel-slide h4 {
+    display: none;
+  }
+  .carousel-slide h1 {
+    margin-bottom: 0;
+  }
+  .album img {
+    width: 400px;
+    height: auto;
+  }
+  .airlines,
+  .ceremony,
+  .athletics {
+    border: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .intro .welcome h1 {
+    transform: translate(-15%, -10%);
+    font-size: 200%;
+  }
+  .album img {
+    width: 300px;
+    height: auto;
+  }
+  .featurette {
+    width: 70%;
+    transform: translateX(2%);
+  }
+  .featurette img {
+    width: 350px;
+    height: auto;
+  }
+  .featurette iframe {
+    width: 370px;
+    height: auto;
+  }
+}

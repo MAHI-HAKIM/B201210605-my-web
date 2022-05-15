@@ -103,7 +103,7 @@ footer {
 .home {
   display: flex;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/main_page.jpg);
+    url(images/main_page.jpg);
   color: rgb(255, 250, 218);
   background-size: cover;
   background-position: center;
@@ -119,7 +119,7 @@ footer {
 }
 
 .home .home-content .text-1 {
-  font-size: 27px;
+  font-size: 40px;
 }
 .home .home-content .text-2 {
   font-size: 75px;
@@ -127,7 +127,7 @@ footer {
   margin-left: -3px;
 }
 .home .home-content .text-3 {
-  font-size: 40px;
+  font-size: 50px;
   margin: 5px 0;
 }
 .home .home-content .text-3 span {
@@ -323,6 +323,36 @@ footer span a:hover {
   }
   .home .home-content .text-3 {
     font-size: 35px;
+  }
+  .home .home-content a {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
+  .max-width {
+    max-width: 930px;
+  }
+  .about .about-content .column {
+    width: 100%;
+  }
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .about .about-content .right {
+    flex: 100%;
+  }
+}
+
+@media (max-width: 470px) {
+  .home .home-content .text-1 {
+    font-size: 20px;
+  }
+  .home .home-content .text-2 {
+    font-size: 10px;
+  }
+  .home .home-content .text-3 {
+    font-size: 3pxpx;
   }
   .home .home-content a {
     font-size: 23px;
