@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.contact {
+  font-family: "Poppins", sans-serif;
+}
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+section {
+  padding: 100px 0;
+}
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+section .title::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: rgb(107, 193, 2);
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+.contact-main {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/contact.jpg);
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+}
+.contact-main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  min-width: 75%;
+  text-align: center;
+}
+.contact-main-text h1 {
+  color: rgb(255, 250, 197);
+  font-size: 50px;
+}
+.contact-main-text p {
+  font-size: 20px;
+  margin: 1rem 0 2rem 0;
+}
+.contact-main-text a {
+  display: inline-block;
+  background: rgb(79, 81, 42);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 30px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 3px solid rgb(252, 255, 104);
+}
+.contact-main-text a:hover {
+  background-color: transparent;
+  border: 3px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  transition: all 0.5s ease;
+}
+
+/* Contact Section Styling */
+.contact .title::after {
+  content: "Get in touch";
+}
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .contact-content .left .icons {
+  margin: 10px 0;
+}
+.contact .contact-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact-content .row .info {
+  margin-left: 30px;
+}
+.contact .contact-content .info .head {
+  font-weight: 500;
+}
+.contact .contact-content .info .sub-title {
+  color: #333;
+}
+.contact .right form .fields {
+  display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact .right form .textarea {
+  height: 80px;
+  width: 100%;
+}
+.contact .right form .name {
+  margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+  border-color: #36057a;
+}
+.contact .right form .textarea textarea {
+  padding-top: 10px;
+}
+.contact .right form .button-area {
+  display: flex;
+  align-items: center;
+}
+.right form .button-area button {
+  color: #fff;
+  display: block;
+  width: 160px !important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background-color: rgb(0, 77, 4);
+  border: 2px solid rgb(110, 255, 78);
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover {
+  color: rgb(0, 0, 0);
+  background: none;
+}
+@media (max-width: 947px) {
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
