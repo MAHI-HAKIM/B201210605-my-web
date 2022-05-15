@@ -9,7 +9,6 @@ $(document).ready(function () {
 
     imagesearch();
   });
-
   function imagesearch() {
     $.ajax({
       method: "GET",

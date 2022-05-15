@@ -280,7 +280,6 @@ header {
     font-size: 150%;
   }
 }
-
 @media (max-width: 700px) {
   .carousel-slide h4 {
     display: none;
