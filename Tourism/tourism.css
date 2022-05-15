@@ -109,7 +109,7 @@ html {
   .intro .welcome h1 {
     transform: translate(25%, 100%);
     font-size: 400%;
-    font-weight: 500;
+    font-weight: 450;
   }
   .heading h1,
   .details h1 {

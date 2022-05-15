@@ -313,6 +313,9 @@ section {
   transform: translateX(0);
 }
 
+.api {
+  margin-bottom: 10%;
+}
 /* SOME RESPONSIVE FEATURES */
 @keyframes fadeInLeft {
   0% {
