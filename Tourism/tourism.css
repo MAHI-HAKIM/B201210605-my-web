@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  line-height: 30px;
+}
+
+html {
+  overflow-x: initial !important;
+  scroll-behavior: smooth;
+}
+
+.intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url(../images/heritage.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.intro .welcome h1 {
+  transform: translate(35%, -90%);
+  font-size: 700%;
+  font-weight: 700;
+  opacity: 0.6;
+  color: white;
+  text-transform: uppercase;
+}
+.intro .welcome {
+  margin: 15% auto auto 15%;
+  position: absolute;
+}
+
+.heading {
+  margin-left: 15%;
+}
+.heading ul {
+  text-align: left;
+  margin-left: 15%;
+  font-size: larger;
+}
+.heading p {
+  font-size: larger;
+}
+.heading h1 {
+  text-align: center;
+  color: #fc4242;
+}
+
+.heading h1:after {
+  display: block;
+  height: 2px;
+  background-color: #000;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.youtube-vid {
+  margin-left: 20%;
+  width: 800px;
+  height: auto;
+  margin-top: 4%;
+}
+.featurette-divider {
+  margin: 5rem 0;
+}
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
+.featurette {
+  width: 90%;
+  transform: translateX(5%);
+}
+.main {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.main h1 {
+  margin-top: 10%;
+}
+
+.details {
+  background-color: rgba(0, 0, 0, 0.25);
+  margin-bottom: 60px;
+}
+
+.muted {
+  color: #fc4242;
+  opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+  .intro .welcome h1 {
+    transform: translate(40%, 100%);
+    font-size: 500%;
+    font-weight: 500;
+  }
+}
+@media (max-width: 768px) {
+  .intro .welcome h1 {
+    transform: translate(25%, 100%);
+    font-size: 400%;
+    font-weight: 500;
+  }
+  .heading h1,
+  .details h1 {
+    font-size: 200%;
+  }
+  .last {
+    margin-top: -15%;
+  }
+}
+@media (max-width: 450px) {
+  .featurette {
+    width: 70%;
+    transform: translateX(2%);
+  }
+  .featurette img {
+    width: 350px;
+    height: auto;
+  }
+  .intro .welcome h1 {
+    transform: translate(15%, -90%);
+  }
+  .last {
+    width: 350px;
+    height: auto;
+  }
+}
