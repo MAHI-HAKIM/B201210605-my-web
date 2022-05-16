@@ -177,3 +177,27 @@ section .title::after {
     font-size: 19px;
   }
 }
+
+@media (max-width: 550px) {
+  .skills {
+    height: 150vh;
+  }
+  .skills .title::after {
+    font-size: 15px;
+  }
+  .skills .maximum-width {
+    height: 750px;
+  }
+  .skills .skills-content .left .text {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 470px) {
+  .skills {
+    height: 230vh;
+  }
+  .skills .maximum-width {
+    height: 180vh;
+  }
+}

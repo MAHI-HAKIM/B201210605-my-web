@@ -103,7 +103,7 @@ footer {
 .home {
   display: flex;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/main_page.jpg);
+    url(../images/main_page.jpg);
   color: rgb(255, 250, 218);
   background-size: cover;
   background-position: center;
@@ -223,7 +223,6 @@ section .title::after {
   margin-top: 10px;
   border-radius: 10px;
   border: 3px solid rgb(27, 203, 4);
-  transform: translateX(150%);
 }
 .about .about-content .right a:hover {
   background-color: transparent;
